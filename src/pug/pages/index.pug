@@ -1,0 +1,314 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="theme-color" content="#ff9800")
+		meta(name="msapplication-navbutton-color" content="#ff9800")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		meta(name="apple-touch-fullscreen" content="yes")
+		link(rel="icon" type="image/x-icon" sizes="16x16" href="#")
+		link(rel="icon" type="image/x-icon" sizes="32x32" href="#")
+		link(rel="icon" type="image/png" sizes="50x50" href="#")
+		link(rel="icon" type="image/png" sizes="60x60" href="#")
+		link(rel="icon" type="image/png" sizes="72x72" href="#")
+		link(rel="icon" type="image/png" sizes="76x76" href="#")
+		link(rel="icon" type="image/png" sizes="114x114" href="#")
+		link(rel="icon" type="image/png" sizes="120x120" href="#")
+		link(rel="icon" type="image/png" sizes="144x144" href="#")
+		link(rel="icon" type="image/png" sizes="152x152" href="#")
+		meta(name="format-detection" content="telephone=no")
+		title All Watches
+		link(rel="stylesheet" href="static/css/main.css")
+	body
+		svg(style="display:none")
+			symbol(id="search" width="18" height="18")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M12.592 11.752l4.83 4.83-.81.87-4.83-4.83c-1.35 1.11-2.97 1.68-4.62 1.68-1.83 0-3.69-.72-5.07-2.1a7.152 7.152 0 0 1 0-10.11 7.152 7.152 0 0 1 10.11 0c2.64 2.64 2.76 6.84.39 9.66zm-9.66-8.79c-2.31 2.31-2.31 6.09 0 8.4 2.31 2.31 6.09 2.31 8.4 0 2.31-2.31 2.31-6.09 0-8.4-1.14-1.17-2.67-1.74-4.2-1.74-1.53 0-3.03.57-4.2 1.74z" fill="#fff")
+			symbol(id="comments" width="15" height="12")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M1.332 12H8c3.676 0 6.667-2.691 6.667-6s-2.991-6-6.667-6C4.323 0 1.332 2.691 1.332 6c0 1.157.361 2.261 1.05 3.224L.844 10.88A.666.666 0 0 0 1.332 12zM8 10.667H2.861l.885-.954a.667.667 0 0 0 .014-.892C3.044 8 2.666 7.025 2.666 6c0-2.573 2.392-4.667 5.333-4.667 2.94 0 5.333 2.094 5.333 4.667S10.94 10.667 8 10.667z" fill="#757575")
+		header#header.page-header
+			.page-header__top-part
+				.wrapper
+					.page-header__top-row
+						a.page-header__toggle(href="#" data-toggle="modal" data-target="#header-menu")
+							span
+						nav.page-header__nav
+							ul.page-list
+								li
+									a(href="#") Журнал
+								li
+									a(href="#") Объявления
+								li 
+									a(href="#") Сообщество
+								li 
+									a(href="#") Справочник
+						.page-header__logo
+							a(href="index.html")
+								img(src="static/img/logo.svg", alt="")
+						.page-header__city
+							a(href="#") Москва
+						.page-header__seacrh
+							input.text-input(type="text")
+							svg.icon--search(width="18" height="18")
+								use(xlink:href="#search")
+			.page-header__bottom-part
+				.wrapper
+					.page-header__bottom-row
+						.bottom-row__nav-block
+							ul.page-list
+								li
+									a(href="#") Новости
+								li
+									a(href="#") Тренды
+								li
+									a(href="#") Обзоры
+								li
+									a(href="#") События
+						.bottom-row__entrance-block
+							a.favorites-link(href="#") Избранное
+								img.icon--star(src="static/img/star.svg", alt="")
+							a.entrance-link(href="#") Войти
+							a.reg-link(href="#") Регистрация
+			.page-header__menu.popup-block#header-menu
+				.inner__menu
+					a.page-header__toggle.close-button(href="#" data-toggle="dismiss")
+						span
+					nav.page-header__nav
+						ul.page-list
+							li
+								a(href="#") Журнал
+							li
+								a(href="#") Объявления
+							li 
+								a(href="#") Сообщество
+							li 
+								a(href="#") Справочник
+		.main-page-wrap
+			.main-page-blocks
+				section.news-block
+					.wrapper
+						.news-block__container
+							.news-block__articles
+								.news-block__heading-block
+									.heading-block__photo-block
+										img(src="static/img/photo-audemars-piguet.jpg", alt="")
+									.heading-block__content
+										b Тема дня
+										.heading-block__breadcrumbs-block
+											.breadcrumbs-block__links
+												a(href="#") #Тренды
+													| , 
+												a(href="") #События
+											.breadcrumbs-block__date
+												span 30 декабря 2018
+										h3 Audemars Piguet 
+											br
+											| готовит сюрприз своим 
+											br
+											| любителям
+										a.btn.btn--light(href="#") Читать
+								.news-block__article-row
+									.news-block__article-card
+										.article-card__photo-block
+											img(src="static/img/photo-swarovski.jpg", alt="")
+										.article-card__breadcrumbs-block
+											.breadcrumbs-block__links
+												a(href="#") #Тренды
+													| , 
+												a(href="") #События
+											.breadcrumbs-block__date
+												span 30 декабря 2018
+										h3 Swarovski привносит элемент неповторимой индивидуальности
+									.news-block__article-card
+										.article-card__photo-block
+											img(src="static/img/photo-decorations.jpg", alt="")
+										.article-card__breadcrumbs-block
+											.breadcrumbs-block__links
+												a(href="#") #Тренды
+													| , 
+												a(href="") #События
+											.breadcrumbs-block__date
+												span 30 декабря 2018
+										h3 Swarovski привносит элемент неповторимой индивидуальности
+								.news-block__content-articles
+									.content-articles__card
+										.content-articles__card-photo
+											img(src="static/img/photo-secrets.jpg", alt="")
+										.content-articles__card-inner
+											.content-articles__breadcrumbs-block
+												.breadcrumbs-block__links
+													a(href="#") #Тренды
+														| , 
+													a(href="") #События
+												.breadcrumbs-block__date
+													span 30 декабря 2018
+											h3 Секреты производства: уникальные приемы в ювелирном искусстве
+											a.content-articles__link(href="#") 5 комментариев
+												svg.icon--comments(width="15" height="12")
+													use(xlink:href="#comments")
+											p Человека, вовсе не знакомого с технической стороной высокого ювелирного искусства, может потрясти изобилие приемов, используемых…
+									.content-articles__card
+										.content-articles__card-photo
+											img(src="static/img/photo-brilliant.jpg", alt="")
+										.content-articles__card-inner
+											.content-articles__breadcrumbs-block
+												.breadcrumbs-block__links
+													a(href="#") #Тренды
+												.breadcrumbs-block__date
+													span 30 декабря 2018
+											h3 Бриллиантовое кольцо в подарок на Рождество Илону Маску
+											p Бен Боллер (Ben Baller), знаменитый американский ювелир, создал кольцо «Тесла» с бриллиантами и рубинами и подарил его на Рождество Илону…
+									.content-articles__card
+										.content-articles__card-photo
+											img(src="static/img/photo-anastazio.jpg", alt="")
+										.content-articles__card-inner
+											.content-articles__breadcrumbs-block
+												.breadcrumbs-block__links
+													a(href="#") #Тренды
+												.breadcrumbs-block__date
+													span 30 декабря 2018
+											h3 Коллекция Ultra Chic от Anastazio
+											a.content-articles__link(href="#") Обсудить
+												svg.icon--comments(width="15" height="12")
+													use(xlink:href="#comments")
+											p Греческий ювелирный дизайнер Anastazio Kostopoulos выпустил новую коллекцию украшений из серебра и золота, основным лейтмотивом которой является…
+									a.btn.btn--light(href="#" data-toggle="news" data-target="") Показать все новости
+							.news-block__sidebar
+								.news-block__sidebar-topics
+									h3 Обсуждаемые темы
+									.sidebar-topics__row
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-1.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") Какие серьги будут популярны в 2019 году
+												a.sidebar-topics__comments(href="#") 15 комментариев
+													span.sidebar-topics__more +3
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-2.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") Мануфактура TAG Heuer
+												a.sidebar-topics__comments(href="#") 8 комментариев
+													span.sidebar-topics__more +6
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-3.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") Panerai Radiomir 1940 Art Deco Dial
+												a.sidebar-topics__comments(href="#") 15 комментариев
+													span.sidebar-topics__more +2
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-4.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") Молодые таланты для Vacheron Constantin
+												a.sidebar-topics__comments(href="#") 55 комментариев
+													span.sidebar-topics__more +31
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-5.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") BaselWorld 2018
+												a.sidebar-topics__comments(href="#") 13 комментариев
+													span.sidebar-topics__more +15
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-6.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") Carl F. Bucherer на Байкале
+												a.sidebar-topics__comments(href="#") 458 комментариев
+													span.sidebar-topics__more +45
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-7.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") Grand Prix d’Horlogerie de Genève 2018
+												a.sidebar-topics__comments(href="#") 5 комментариев
+													span.sidebar-topics__more +5
+										.sidebar-topics__card
+											.sidebar-topics__card-photo
+												img(src="static/img/photo-topics-8.png", alt="")
+											.sidebar-topics__card-inner
+												a.sidebar-topics__title(href="#") Вальтер фон Кенэл, Longines
+												a.sidebar-topics__comments(href="#") 12 комментариев
+													span.sidebar-topics__more +5
+									a.btn.btn--light(href="#") Все обсуждаемые темы
+								.news-block__sidebar-advertising
+									span Реклама на All Watches
+									.sidebar-advertising__wrapper
+										.sidebar-avertissing__photo-block
+											img(src="static/img/banner_advertising.jpg", alt="")
+				section.overview
+					.wrapper
+						h3 Обзоры часов
+						.overview__slider
+							.overview__card
+								.overview__photo-block
+									img(src="static/img/photo-bovet.jpg", alt="")
+								.overview__inner
+									.overview__breadcrumbs
+										a(href="#") #Обзор
+										span 30 декабря 2018
+									.overview__title
+										h3 Обзор часов Ulysse Nardin Freak Phantom
+									.overview__text
+										p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
+									.overview__btn
+										a.btn.btn--cta(href="#") Читать
+							.overview__card
+								.overview__photo-block
+									img(src="static/img/photo-rolex-oyster.jpg", alt="")
+								.overview__inner
+									.overview__breadcrumbs
+										a(href="#") #Обзор
+										span 30 декабря 2018
+									.overview__title
+										h3 Обзор часов Rolex Oyster Perpetual Daytona Cosmograph
+									.overview__text
+										p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
+									.overview__btn
+										a.btn.btn--cta(href="#") Читать
+			footer.main-footer
+				.wrapper
+					.main-footer__container
+						.main-footer__contacts
+							form.footer__subcription
+								input(type="text" placeholder="Ваш e-mail")
+								a.btn.btn--sub(href="#") Подписаться
+							.main-footer__social-block
+								//- ul
+								//- 	li
+								//- 		a(href="#")
+								//- 			svg(width="" height="")
+						.main-footer__content
+							.footer__box
+								a.footer__main-link(href="#") All Watches
+								a.footer__link(href="entrance.html") О сервисе
+								a.footer__link(href="#") Новости
+								a.footer__link(href="#") Вакансии
+								a.footer__link(href="casting.html") Карта сайта
+							.footer__box
+								a.footer__main-link(href="#") Каталог
+								a.footer__link(href="#") Мужские часы
+								a.footer__link(href="actors_list.html") Женские часы
+								a.footer__link(href="create_casting.html") Новинки
+								a.footer__link(href="cinema.html") Спецпредложения
+							.footer__box
+								a.footer__main-link(href="#") Продавцам
+								a.footer__link(href="#") С чего начать
+								a.footer__link(href="#") Гарантии и условия
+								a.footer__link(href="#") Платные услуги
+							.footer__box
+								a(href="#") Партнерам
+								a(href="#") Реклама
+								a(href="#") Пресс-кит
+							.footer__box
+								a(href="#") Помощь
+								a(href="#") Информация
+								a(href="#") FAQ
+	script(src="static/js/jquery-3.3.1.min.js")
+	script(src="static/js/swiper.min.js")
+	script(src="static/js/main.js")
