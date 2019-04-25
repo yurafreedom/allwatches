@@ -244,33 +244,38 @@ html(lang="ru-RU")
 				section.overview
 					.wrapper
 						h3 Обзоры часов
-						.overview__slider
-							.overview__card
-								.overview__photo-block
-									img(src="static/img/photo-bovet.jpg", alt="")
-								.overview__inner
-									.overview__breadcrumbs
-										a(href="#") #Обзор
-										span 30 декабря 2018
-									.overview__title
-										h3 Обзор часов Ulysse Nardin Freak Phantom
-									.overview__text
-										p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
-									.overview__btn
-										a.btn.btn--cta(href="#") Читать
-							.overview__card
-								.overview__photo-block
-									img(src="static/img/photo-rolex-oyster.jpg", alt="")
-								.overview__inner
-									.overview__breadcrumbs
-										a(href="#") #Обзор
-										span 30 декабря 2018
-									.overview__title
-										h3 Обзор часов Rolex Oyster Perpetual Daytona Cosmograph
-									.overview__text
-										p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
-									.overview__btn
-										a.btn.btn--cta(href="#") Читать
+						.swiper-container
+							.overview__slider
+								.swiper-wrapper
+									.swiper-slide
+										.overview__card
+											.overview__photo-block
+												img(src="static/img/photo-bovet.jpg", alt="")
+											.overview__inner
+												.overview__breadcrumbs
+													a(href="#") #Обзор
+													span 30 декабря 2018
+												.overview__title
+													h3 Обзор часов Ulysse Nardin Freak Phantom
+												.overview__text
+													p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
+												.overview__btn
+													a.btn.btn--cta(href="#") Читать
+									.swiper-slide
+										.overview__card
+											.overview__photo-block
+												img(src="static/img/photo-rolex-oyster.jpg", alt="")
+											.overview__inner
+												.overview__breadcrumbs
+													a(href="#") #Обзор
+													span 30 декабря 2018
+												.overview__title
+													h3 Обзор часов Rolex Oyster Perpetual Daytona Cosmograph
+												.overview__text
+													p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
+												.overview__btn
+													a.btn.btn--cta(href="#") Читать
+								.swiper-scrollbar
 			footer.main-footer
 				.wrapper
 					.main-footer__container

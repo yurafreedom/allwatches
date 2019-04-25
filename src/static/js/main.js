@@ -51,6 +51,6 @@ $('[data-toggle="news"]').click(function(e) {
 var mySwiper = new Swiper ('.overview__slider', {
   scrollbar: {
     el: '.swiper-scrollbar',
-    hide: true,
+    hide: false,
   },
 });
