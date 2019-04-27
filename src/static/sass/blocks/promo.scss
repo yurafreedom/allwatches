@@ -1,0 +1,154 @@
+.promo-page {
+	padding-top: 60px;
+}
+
+.promo-block {
+	background-image: url('../img/promo-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.65);
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 800px;
+		margin: 0 auto;
+		padding-top: 143px;
+	}
+	&__heading span {
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: 500;
+		color: #fff;
+	}
+	&__heading h1 {
+		display: block;
+		text-align: center;
+		font-family: 'FuturaPT', sans-serif;
+		font-size: 52px;
+		line-height: 58px;
+		color: #fff;
+		margin-bottom: 47px;
+	}
+	&__heading-btn {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 388px;
+		margin-bottom: 70px;
+	}
+	&__heading-btn .btn--cta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 200px;
+		height: 60px;
+		border-radius: 3px;
+		background-color: #006039;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: 400;
+		color: #fff;
+	}
+	&__heading-btn .btn--light {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 168px;
+		height: 60px;
+		background-color: rgba(255, 255, 255, 0.1);
+		border: 2px solid rgba(255, 255, 255, 0.11);
+		border-radius: 6px;
+		font-size: 18px;
+		line-height: 25px;
+		color: #fff;
+		font-weight: 400;
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 50px;
+	}
+	&__card {
+		position: relative;
+		display: flex;
+		width: 380px;
+	}
+	&__card-photo {
+		position: relative;
+		width: 380px;
+		height: 260px;
+	}
+	&__card-body {
+		position: absolute;
+		left: 40px;
+		bottom: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__card-body span {
+		display: block;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 300;
+		color: #fff;
+		margin-bottom: 13px;
+	}
+	&__card-body small {
+		display: block;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 500;
+		color: #fff;
+	}
+	&__card-body .icon--promo {
+		position: relative;
+		top: 1px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.promo-block {
+		&__heading {
+			padding-top: 84px;
+			width: 100%;
+		}
+		&__heading span {
+			margin-bottom: 21px;
+		}
+		&__heading h1 {
+			font-size: 30px;
+			line-height: 32px;
+			margin-bottom: 33px;
+		}
+		&__heading-btn {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		&__heading-btn .btn--cta {
+			margin-bottom: 10px;
+		}
+		&__list {
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 34px;
+		}
+		&__card {
+			width: 300px;
+			margin-bottom: 20px;
+		}
+		&__card-photo {
+			width: 300px;
+			height: 200px;
+		}
+	}
+}

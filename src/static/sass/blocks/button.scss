@@ -17,8 +17,8 @@
 	line-height: 24px;
 	font-weight: 300;
 	color: #000;
-	&:hover {
-		color: lighten(#000, 30%);
+	&:hover, &:active {
+		color: #7F593C;
 	}
 }
 
@@ -29,4 +29,7 @@
 	font-weight: 300;
 	line-height: 24px;
 	color: #fff;
+	&:hover, &:active {
+		color: #7F593C;
+	}
 }

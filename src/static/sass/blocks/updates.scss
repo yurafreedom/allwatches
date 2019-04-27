@@ -149,16 +149,26 @@
 	.swiper-button-prev {
 		position: absolute;
 		display: none;
-		top: 50%;
-		transform: translateY(-50%), rotate(-180deg);
-		left: 0;
-		background-image: url('../img/swiper-arrow.svg');
-		background-repeat: no-repeat;
+		top: 57%;
+		transform: translateY(-50%);
+		right: 0;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
-		z-index: 30;
 		background-color: #006039;
+		background-image: none;
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			background-image: url('../img/swiper-arrow.svg');
+			background-repeat: no-repeat;
+			width: 10px;
+			height: 17px;
+			top: 17px;
+			right: 21px;
+			transform: rotate(180deg);
+		}
 	}
 	.swiper-button-prev.active {
 		display: block;
@@ -169,22 +179,21 @@
 		top: 57%;
 		transform: translateY(-50%);
 		right: 0;
-		background-image: url('../img/swiper-arrow.svg');
-		background-repeat: no-repeat;
-		width: 10px;
-		height: 17px;
-		z-index: 30;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #006039;
+		background-image: none;
 		&::before {
 			content: '';
 			position: absolute;
 			display: block;
-			top: 0;
-			left: -50px;
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			background-color: #006039;
-			z-index: -1;
+			background-image: url('../img/swiper-arrow.svg');
+			background-repeat: no-repeat;
+			width: 10px;
+			height: 17px;
+			top: 17px;
+			left: 21px;
 		}
 	}
 	.swiper-button-next.active {
@@ -195,5 +204,8 @@
 @media screen and (max-width: 767px) {
 	.updates-block {
 		padding-bottom: 30px;
+	}
+	.swiper-button-next, .swiper-button-prev {
+		display: none !important;
 	}
 }

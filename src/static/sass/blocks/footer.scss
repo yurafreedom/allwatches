@@ -41,15 +41,15 @@
 		color: #fff;
 		background-color: #006039;
 		border-radius: 4px;
+		&:hover, &:active {
+			color: #7F593C;
+		}
 	}
 	&__social-block ul {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		flex-wrap: wrap;
-	}
-	&__social-block ul li {
-
 	}
 	&__social-block ul li:not(:last-child) {
 		margin-right: 44px;
@@ -63,6 +63,15 @@
 		border-radius: 50%;
 		width: 56px;
 		height: 56px;
+		&:hover, &:active {
+			fill: #7F593C;
+		}
+	}
+	&__social-block ul svg {
+		fill: #000;
+		&:hover, &:active {
+			fill: #7F593C;
+		}		
 	}
 	&__content {
 		display: flex;
@@ -124,17 +133,11 @@
 
 @media screen and (max-width: 767px) {
 	.main-footer {
-		&__contacts {
-			display: block;
+		&__container {
+			padding-top: 20px;
 		}
-		&__subscription {
-			display: block;
-			width: 100%;
-			margin-left: 0;
-			margin-right: 0;
-		}
-		&__content {
-			display: block;
+		&__contacts, &__content {
+			display: none;
 		}
 		&__box:not(:last-child) {
 			margin-right: 0;
@@ -144,9 +147,20 @@
 		}
 		&__copyright span {
 			margin-right: 0;
+			margin-bottom: 22px;
+		}
+		&__copyright a {
+			line-height: 22px;
 		}
 		&__copyright a:not(:last-child) {
 			margin-right: 0;
+			margin-bottom: 10px;
 		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.contacts-mob {
+		display: none;
 	}
 }

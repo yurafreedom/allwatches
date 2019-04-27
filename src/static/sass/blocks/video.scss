@@ -35,6 +35,9 @@
 		width: 210px;
 		height: 54px;
 		color: #fff;
+		&:hover, &:active {
+			color: #7F593C;
+		}
 	}
 	.swiper-container {
 		width: 100%;

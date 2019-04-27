@@ -99,7 +99,7 @@ var mySwiper = new Swiper ('.updates-block__swiper-slider', {
       320: {
         slidesPerView: 2,
         spaceBetween: 120,
-        },
+      },
       480: {
         slidesPerView: 2,
         spaceBetween: 180,

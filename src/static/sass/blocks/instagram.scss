@@ -48,6 +48,21 @@
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.instagram-block {
+		&__photo-list {
+			flex-wrap: nowrap;
+			overflow: hidden;
+		}
+		&__photo-card {
+			flex-shrink: 0;
+		}
+		&__photo-card.not-active {
+			display: none;
+		}
+	}
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
 	.instagram-block {
 		&__photo-card {

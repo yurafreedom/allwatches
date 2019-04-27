@@ -109,6 +109,10 @@
 		margin: 0 auto;
 	}
 	&__card-body {
+		display: flex;
+		flex-direction: column;
+		margin-top: auto;
+		min-height: calc(100% - 220px);
 		background-color: #FAF9F7;
 	}
 	&__card-body span {
@@ -149,12 +153,37 @@
 @media screen and (max-width: 767px) {
 	.collection-block {
 		&__list {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			margin-bottom: 0;
+		}
+		&__btn {
+			margin-bottom: 30px;
+		}
+		&__card {
+			width: 140px;
 		}
 		&__card:not(:nth-child(5n)) {
 			margin-right: 0;
+		}
+		&__card:first-child {
+			margin-right: 20px;
+		}
+		&__photo-block {
+			width: 140px;
+		}
+		&__photo-block .collection-1 {
+			display: block;
+			width: 116px;
+			height: 136px;
+			margin: 0 auto;
+		}
+		&__photo-block .collection-2 {
+			display: block;
+			width: 92px;
+			height: 128px;
+			margin: 0 auto;
+		}
+		&__card.not-active {
+			display: none;
 		}
 	}
 }

@@ -245,6 +245,9 @@
 		color: #A37452;
 		transition: all .3s ease-in-out;
 		padding-left: 21px;
+		&:hover, &:active {
+			color: #000;
+		}
 	}
 	&__card-inner .icon--comments {
 		position: absolute;
@@ -283,6 +286,9 @@
 		line-height: 22px;
 		font-weight: 500;
 		color: #000;
+		&:hover, &:active {
+			color: #7F593C;
+		}
 	}
 	&__card-inner &__comments {
 		position: relative;
@@ -341,9 +347,14 @@
 			flex-direction: column;
 			align-items: center;
 			order: 2;
+			margin-bottom: 20px;
 		}
 		&__article-card {
 			width: 300px;
+		}
+		&__article-card h3 {
+			font-size: 24px;
+			line-height: 26px;
 		}
 		&__article-card:nth-child(1) {
 			display: none;
@@ -370,6 +381,7 @@
 			left: 0;
 			width: 300px;
 			height: 196px;
+			padding-top: 20px;
 		}
 		.heading-block__content h3 {
 			font-size: 24px;
@@ -377,7 +389,7 @@
 		}
 		.heading-block__content b {
 			position: absolute;
-			top: 10px;
+			top: 30px;
 			left: 20px;
 		}
 		&__sidebar-topics {

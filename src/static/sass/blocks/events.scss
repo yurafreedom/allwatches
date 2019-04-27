@@ -76,6 +76,9 @@
 		font-weight: 600;
 		color: #000;
 	}
+	.btn--mob {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 767px) {
