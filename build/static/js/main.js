@@ -33,6 +33,9 @@ $("body").append(block.append(indicator));
 var w1 = $("div", block).innerWidth();
 block.css("overflow-y", "scroll");
 var w2 = $("div", block).innerWidth();
+$(block).remove();
+scrollbarWidth = (w1 - w2);
+
 
 $('[data-toggle="news"]').click(function(e) {
  e.preventDefault();
@@ -49,8 +52,71 @@ $('[data-toggle="news"]').click(function(e) {
 });
 
 var mySwiper = new Swiper ('.overview__slider', {
+  slidesPerView: 2,
   scrollbar: {
     el: '.swiper-scrollbar',
     hide: false,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      },
+    480: {
+      slidesPerView: 1,
+    },
+  }
+});
+
+var mySwiper = new Swiper ('.video-block__slider', {
+  slidesPerView: 2,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      },
+    480: {
+      slidesPerView: 1,
+    },
+  }
+});
+
+$('.video-block__overlay').on('click', function() {
+    $(this).addClass('active');
+    $('.video-block__card').html('<iframe width="540" height="380" src="https://www.youtube.com/embed/2nBbwgdJwF8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+});
+
+
+var mySwiper = new Swiper ('.updates-block__swiper-slider', {
+    slidesPerView: 6,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 120,
+        },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 180,
+      },
+    },
+    on: {
+      slideNextTransitionStart: function () {
+         $('.swiper-button-prev').addClass('active');
+      },
+    },
+}); 
+
+$('.updates-block__slick-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<button class="prev updates-block__arrow"></button>',
+  nextArrow: '<button class="next updates-block__arrow"></button>',
 });

@@ -1,6 +1,6 @@
 @import "swiper.min.scss";
-// @import "slick.scss";
-// @import "slick-theme.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
 @import "_normalize.scss";
 @import "_base.scss";
 @import "blocks/fonts.scss";
@@ -9,6 +9,10 @@
 @import "blocks/header.scss";
 @import "blocks/news.scss";
 @import "blocks/overview.scss";
-@import "blocks/plugins.scss";
+@import "blocks/events.scss";
+@import "blocks/video.scss";
+@import "blocks/updates.scss";
+@import "blocks/collection.scss";
+@import "blocks/instagram.scss";
 @import "blocks/footer.scss";
 @import "blocks/popup.scss";
