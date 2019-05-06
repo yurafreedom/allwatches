@@ -67,7 +67,7 @@
 		color: #000;
 		margin-bottom: 8px;
 	}
-	&__card-inner h3 {
+	&__card-inner a {
 		display: block;
 		text-align: center;
 		font-family: 'FuturaPT', sans-serif;
@@ -106,7 +106,7 @@
 		&__card-inner span {
 			text-align: left;
 		}
-		&__card-inner h3 {
+		&__card-inner a {
 			text-align: left;
 			font-size: 24px;
 			line-height: 26px;

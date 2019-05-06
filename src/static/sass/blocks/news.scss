@@ -30,7 +30,7 @@
 	&__article-card:not(:last-child) {
 		margin-right: 20px;
 	}
-	&__article-card h3 {
+	&__article-card &__title {
 		display: block;
 		font-family: 'FuturaPT',sans-serif;
 		font-weight: 600;
@@ -136,7 +136,7 @@
 		background-color: #006039;
 		margin-bottom: 20px;
 	}
-	&__content h3 {
+	&__content &__title {
 		display: block;
 		font-family: 'FuturaPT', sans-serif;
 		font-size: 36px;
@@ -221,7 +221,7 @@
 	&__card-inner {
 		width: 380px;
 	}
-	&__card-inner h3 {
+	&__card-inner &__title {
 		display: block;
 		font-family: 'FuturaPT', sans-serif;
 		font-size: 30px;
@@ -352,7 +352,7 @@
 		&__article-card {
 			width: 300px;
 		}
-		&__article-card h3 {
+		&__article-card &__title {
 			font-size: 24px;
 			line-height: 26px;
 		}
@@ -383,7 +383,7 @@
 			height: 196px;
 			padding-top: 20px;
 		}
-		.heading-block__content h3 {
+		.heading-block__content .heading-block__title {
 			font-size: 24px;
 			line-height: 26px;
 		}
@@ -422,7 +422,7 @@
 		.content-articles__card-inner p {
 			display: none;
 		}
-		.content-articles__card-inner h3 {
+		.content-articles__card-inner .content-articles__title {
 			font-size: 24px;
 			line-height: 26px;
 		}

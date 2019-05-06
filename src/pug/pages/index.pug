@@ -66,8 +66,9 @@ html(lang="ru-RU")
 							a(href="#") Москва
 						.page-header__search
 							input.text-input(type="text")
-							svg.icon--search(width="18" height="18")
-								use(xlink:href="#search")
+							button.btn.btn--search(type="button")
+								svg(width="18" height="18")
+									use(xlink:href="#search")
 			.page-header__bottom-part
 				.wrapper
 					.page-header__bottom-row
@@ -108,7 +109,8 @@ html(lang="ru-RU")
 							.news-block__articles
 								.news-block__heading-block
 									.heading-block__photo-block
-										img(src="static/img/photo-audemars-piguet.jpg", alt="")
+										a(href="#")
+											img(src="static/img/photo-audemars-piguet.jpg", alt="")
 									.heading-block__content
 										b Тема дня
 										.heading-block__breadcrumbs-block
@@ -118,12 +120,13 @@ html(lang="ru-RU")
 												a(href="") #События
 											.breadcrumbs-block__date
 												span 30 декабря 2018
-										h3 Audemars Piguet готовит сюрприз своим любителям
+										a.heading-block__title(href="#") Audemars Piguet готовит сюрприз своим любителям
 										a.btn.btn--light(href="#") Читать
 								.news-block__article-row
 									.news-block__article-card
 										.article-card__photo-block
-											img(src="static/img/photo-swarovski.jpg", alt="")
+											a(href="#")
+												img(src="static/img/photo-swarovski.jpg", alt="")
 										.article-card__breadcrumbs-block
 											.breadcrumbs-block__links
 												a(href="#") #Тренды
@@ -131,10 +134,11 @@ html(lang="ru-RU")
 												a(href="") #События
 											.breadcrumbs-block__date
 												span 30 декабря 2018
-										h3 Swarovski привносит элемент неповторимой индивидуальности
+										a.news-block__title(href="#") Swarovski привносит элемент неповторимой индивидуальности
 									.news-block__article-card
 										.article-card__photo-block
-											img(src="static/img/photo-decorations.jpg", alt="")
+											a(href="#")
+												img(src="static/img/photo-decorations.jpg", alt="")
 										.article-card__breadcrumbs-block
 											.breadcrumbs-block__links
 												a(href="#") #Тренды
@@ -142,11 +146,12 @@ html(lang="ru-RU")
 												a(href="") #События
 											.breadcrumbs-block__date
 												span 30 декабря 2018
-										h3 10 российских брендов украшений
+										a.news-block__title(href="#") 10 российских брендов украшений
 								.news-block__content-articles
 									.content-articles__card
 										.content-articles__card-photo
-											img(src="static/img/photo-secrets.jpg", alt="")
+											a(href="#")
+												img(src="static/img/photo-secrets.jpg", alt="")
 										.content-articles__card-inner
 											.content-articles__breadcrumbs-block
 												.breadcrumbs-block__links
@@ -155,32 +160,34 @@ html(lang="ru-RU")
 													a(href="") #События
 												.breadcrumbs-block__date
 													span 30 декабря 2018
-											h3 Секреты производства: уникальные приемы в ювелирном искусстве
+											a.content-articles__title(href="#") Секреты производства: уникальные приемы в ювелирном искусстве
 											a.content-articles__link(href="#") 5 комментариев
 												svg.icon--comments(width="15" height="12")
 													use(xlink:href="#comments")
 											p Человека, вовсе не знакомого с технической стороной высокого ювелирного искусства, может потрясти изобилие приемов, используемых…
 									.content-articles__card
 										.content-articles__card-photo
-											img(src="static/img/photo-brilliant.jpg", alt="")
+											a(href="#")
+												img(src="static/img/photo-brilliant.jpg", alt="")
 										.content-articles__card-inner
 											.content-articles__breadcrumbs-block
 												.breadcrumbs-block__links
 													a(href="#") #Тренды
 												.breadcrumbs-block__date
 													span 30 декабря 2018
-											h3 Бриллиантовое кольцо в подарок на Рождество Илону Маску
+											a.content-articles__title(href="#") Бриллиантовое кольцо в подарок на Рождество Илону Маску
 											p Бен Боллер (Ben Baller), знаменитый американский ювелир, создал кольцо «Тесла» с бриллиантами и рубинами и подарил его на Рождество Илону…
 									.content-articles__card
 										.content-articles__card-photo
-											img(src="static/img/photo-anastazio.jpg", alt="")
+											a(href="#")
+												img(src="static/img/photo-anastazio.jpg", alt="")
 										.content-articles__card-inner
 											.content-articles__breadcrumbs-block
 												.breadcrumbs-block__links
 													a(href="#") #Тренды
 												.breadcrumbs-block__date
 													span 30 декабря 2018
-											h3 Коллекция Ultra Chic от Anastazio
+											a.content-articles__title(href="#") Коллекция Ultra Chic от Anastazio
 											a.content-articles__link(href="#") Обсудить
 												svg.icon--comments(width="15" height="12")
 													use(xlink:href="#comments")
@@ -267,7 +274,7 @@ html(lang="ru-RU")
 													a(href="#") #Обзор
 													span 30 декабря 2018
 												.overview__title
-													h3 Обзор часов Ulysse Nardin Freak Phantom
+													a(href="#") Обзор часов Ulysse Nardin Freak Phantom
 												.overview__text
 													p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
 												.overview__btn
@@ -281,7 +288,7 @@ html(lang="ru-RU")
 													a(href="#") #Обзор
 													span 30 декабря 2018
 												.overview__title
-													h3 Обзор часов Rolex Oyster Perpetual Daytona Cosmograph
+													a(href="#") Обзор часов Rolex Oyster Perpetual Daytona Cosmograph
 												.overview__text
 													p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
 												.overview__btn
@@ -295,7 +302,7 @@ html(lang="ru-RU")
 													a(href="#") #Обзор
 													span 30 декабря 2018
 												.overview__title
-													h3 Обзор часов Ulysse Nardin Freak Phantom
+													a(href="#") Обзор часов Ulysse Nardin Freak Phantom
 												.overview__text
 													p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
 												.overview__btn
@@ -309,7 +316,7 @@ html(lang="ru-RU")
 													a(href="#") #Обзор
 													span 30 декабря 2018
 												.overview__title
-													h3 Обзор часов Rolex Oyster Perpetual Daytona Cosmograph
+													a(href="#") Обзор часов Rolex Oyster Perpetual Daytona Cosmograph
 												.overview__text
 													p В следующих сезонах дизайнеры предлагают нам сосредоточиться на украшениях. Ведь порой именно аксессуары являются самой важной частью имиджа.
 												.overview__btn
@@ -323,16 +330,18 @@ html(lang="ru-RU")
 						.events-block__list
 							.events-block__card
 								.events-block__photo-block
-									img(src="static/img/photo-exhibition.jpg", alt="")
+									a(href="#")
+										img(src="static/img/photo-exhibition.jpg", alt="")
 								.events-block__card-inner
 									span 30 декабря 2018
-									h3 Ювелирная выставка-продажа «Сокровища Петербурга»
+									a(href="#") Ювелирная выставка-продажа «Сокровища Петербурга»
 							.events-block__card
 								.events-block__photo-block
-									img(src="static/img/photo-dictatorship.jpg", alt="")
+									a(href="#")
+										img(src="static/img/photo-dictatorship.jpg", alt="")
 								.events-block__card-inner
 									span 30 декабря 2018
-									h3 «Диктатура сердца» придет на Baselworld
+									a(href="#") «Диктатура сердца» придет на Baselworld
 						a.btn.btn--light.btn--mob(href="#") Календарь мероприятий
 				section.video-block
 					.wrapper
@@ -428,8 +437,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm Audemars Piguet
-												span.updates-block__name Royal Oak Offshore Collection
+												a(href="#").updates-block__firm Audemars Piguet
+												a(href="#").updates-block__name Royal Oak Offshore Collection
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 5 450 850 руб.
@@ -448,8 +457,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm A.Lange Söhne
-												span.updates-block__name Lange 1
+												a(href="#").updates-block__firm A.Lange Söhne
+												a(href="#").updates-block__name Lange 1
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 1 750 550 руб.
@@ -468,8 +477,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm BREGUET
-												span.updates-block__name Classique Moonphase Power Reserve 7787BR/129/V6
+												a(href="#").updates-block__firm BREGUET
+												a(href="#").updates-block__name Classique Moonphase Power Reserve 7787BR/129/V6
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 1 450 850 руб.
@@ -488,8 +497,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm Rolex
-												span.updates-block__name Daytona Roestvrij Staal 18K Geel Goud 16523 - W5327
+												a(href="#").updates-block__firm Rolex
+												a(href="#").updates-block__name Daytona Roestvrij Staal 18K Geel Goud 16523 - W5327
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 1 750 550 руб.
@@ -508,8 +517,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm IWC
-												span.updates-block__name Aquatimer Chronograph IW376702
+												a(href="#").updates-block__firm IWC
+												a(href="#").updates-block__name Aquatimer Chronograph IW376702
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 830 850 руб.
@@ -528,8 +537,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm Audemars Piguet
-												span.updates-block__name Royal Oak Offshore Limited Edition 26378IO.OO.A001KE.01
+												a(href="#").updates-block__firm Audemars Piguet
+												a(href="#").updates-block__name Royal Oak Offshore Limited Edition 26378IO.OO.A001KE.01
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 2 330 900 руб.
@@ -548,8 +557,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm Audemars Piguet
-												span.updates-block__name Royal Oak Offshore Collection
+												a(href="#").updates-block__firm Audemars Piguet
+												a(href="#").updates-block__name Royal Oak Offshore Collection
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 5 450 850 руб.
@@ -568,8 +577,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm A.Lange Söhne
-												span.updates-block__name Lange 1
+												a(href="#").updates-block__firm A.Lange Söhne
+												a(href="#").updates-block__name Lange 1
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 1 750 550 руб.
@@ -588,8 +597,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm BREGUET
-												span.updates-block__name Classique Moonphase Power Reserve 7787BR/129/V6
+												a(href="#").updates-block__firm BREGUET
+												a(href="#").updates-block__name Classique Moonphase Power Reserve 7787BR/129/V6
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 1 450 850 руб.
@@ -608,8 +617,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm Rolex
-												span.updates-block__name Daytona Roestvrij Staal 18K Geel Goud 16523 - W5327
+												a(href="#").updates-block__firm Rolex
+												a(href="#").updates-block__name Daytona Roestvrij Staal 18K Geel Goud 16523 - W5327
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 1 750 550 руб.
@@ -628,8 +637,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm IWC
-												span.updates-block__name Aquatimer Chronograph IW376702
+												a(href="#").updates-block__firm IWC
+												a(href="#").updates-block__name Aquatimer Chronograph IW376702
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 830 850 руб.
@@ -648,8 +657,8 @@ html(lang="ru-RU")
 											.updates-block__card-star
 												img(src="static/img/star.svg", alt="")
 											.updates-block__card-body
-												b.updates-block__firm Audemars Piguet
-												span.updates-block__name Royal Oak Offshore Limited Edition 26378IO.OO.A001KE.01
+												a(href="#").updates-block__firm Audemars Piguet
+												a(href="#").updates-block__name Royal Oak Offshore Limited Edition 26378IO.OO.A001KE.01
 												.updates-block__card-inner
 													span.updates-block__product-code Ref.: 26170TI.OO.1000TI.01
 													b.updates-block__price 2 330 900 руб.
@@ -665,64 +674,74 @@ html(lang="ru-RU")
 						.collection-block__list
 							.collection-block__card
 								.collection-block__photo-block
-									img.collection-1(src="static/img/product-collection-1.png", alt="")
+									a(href="#")
+										img.collection-1(src="static/img/product-collection-1.png", alt="")
 								.collection-block__card-body
-									span Rolex
-									h3 Datejust
+									a(href="#").collection-block__brand Rolex
+									a(href="#").collection-block__name Datejust
 							.collection-block__card
 								.collection-block__photo-block
-									img.collection-2(src="static/img/product-collection-2.png", alt="")
+									a(href="#")
+										img.collection-2(src="static/img/product-collection-2.png", alt="")
 								.collection-block__card-body
-									span Audemars Piguet
-									h3 Royal Oak Offshore
+									a(href="#").collection-block__brand Audemars Piguet
+									a(href="#").collection-block__name Royal Oak Offshore
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-3(src="static/img/product-collection-3.png", alt="")
+									a(href="#")
+										img.collection-3(src="static/img/product-collection-3.png", alt="")
 								.collection-block__card-body
-									span Blancpain
-									h3 Villeret
+									a(href="#").collection-block__brand Blancpain
+									a(href="#").collection-block__name Villeret
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-4(src="static/img/product-collection-4.png", alt="")
+									a(href="#")
+										img.collection-4(src="static/img/product-collection-4.png", alt="")
 								.collection-block__card-body
-									span Breguet
-									h3 Classique
+									a(href="#").collection-block__brand Breguet
+									a(href="#").collection-block__name Classique
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-5(src="static/img/product-collection-5.png", alt="")
+									a(href="#")
+										img.collection-5(src="static/img/product-collection-5.png", alt="")
 								.collection-block__card-body
-									span Hublot
-									h3 Big Bang
+									a(href="#").collection-block__brand Hublot
+									a(href="#").collection-block__name Big Bang
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-6(src="static/img/product-collection-6.png", alt="")
+									a(href="#")
+										img.collection-6(src="static/img/product-collection-6.png", alt="")
 								.collection-block__card-body
-									span Patek Philippe
-									h3 Calatrava
+									a(href="#").collection-block__brand Patek Philippe
+									a(href="#").collection-block__name Calatrava
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-7(src="static/img/product-collection-7.png", alt="")
+									a(href="#")
+										img.collection-7(src="static/img/product-collection-7.png", alt="")
 								.collection-block__card-body
-									span Rolex
-									h3 Daytona
+									a(href="#").collection-block__brand Rolex
+									a(href="#").collection-block__name Daytona
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-8(src="static/img/product-collection-8.png", alt="")
+									a(href="#")
+										img.collection-8(src="static/img/product-collection-8.png", alt="")
 								.collection-block__card-body
-									span Rolex
-									h3 Sea-Dweller
+									a(href="#").collection-block__brand Rolex
+									a(href="#").collection-block__name Sea-Dweller
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-9(src="static/img/product-collection-9.png", alt="")
+									a(href="#")
+										img.collection-9(src="static/img/product-collection-9.png", alt="")
 								.collection-block__card-body
-									span Rolex
-									h3 Oyster Perpetual
+									a(href="#").collection-block__brand Rolex
+									a(href="#").collection-block__name Oyster Perpetual
 							.collection-block__card.not-active
 								.collection-block__photo-block
-									img.collection-10(src="static/img/product-collection-10.png", alt="")
+									a(href="#")
+										img.collection-10(src="static/img/product-collection-10.png", alt="")
 								.collection-block__card-body
-									span Omega
-									h3 Speedmaster
+									a(href="#").collection-block__brand Omega
+									a(href="#").collection-block__name Speedmaster
 						.collection-block__btn
 							a.btn.btn--light(href="#") Показать ещё
 				section.instagram-block

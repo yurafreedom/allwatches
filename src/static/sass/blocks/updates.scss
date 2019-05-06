@@ -65,6 +65,7 @@
 		top: 5px;
 		right: 5px;
 		z-index: 20;
+		cursor: pointer;
 	}
 	&__card-body {
 		position: relative;
@@ -137,6 +138,7 @@
 		width: 8px;
 		height: 14px;
 		z-index: 20;
+		cursor: pointer;
 	}
 	&__arrow.prev {
 		left: 10px;
@@ -157,6 +159,7 @@
 		border-radius: 50%;
 		background-color: #006039;
 		background-image: none;
+		cursor: pointer;
 		&::before {
 			content: '';
 			position: absolute;
@@ -184,6 +187,7 @@
 		border-radius: 50%;
 		background-color: #006039;
 		background-image: none;
+		cursor: pointer;
 		&::before {
 			content: '';
 			position: absolute;

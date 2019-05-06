@@ -106,10 +106,11 @@ body {
 	flex-direction: row;
 }
 
-.page-header__search .icon--search {
+.page-header__search .btn--search {
 	position: absolute;
 	top: 9px;
 	right: 18px;
+	cursor: pointer;
 }
 
 .page-header__search .text-input {
